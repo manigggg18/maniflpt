@@ -7,11 +7,30 @@
 <!- This is a replacement block for Body in base.html -->
 {% block body %}
     <!- Try building a new body here, bootstrap is a wise choice ->
-    <body style="background-color:black;">
+    <style>
+        hr.rounded {
+            border-top: 8px solid #bbb;
+            border-radius: 5px;
+        }
+    </style>
+    <body style="background-color:rgb(50, 50, 50);">
         <div class="px-5 py-5 mx-auto">
-            <h1 style="color:red;"><strong>About Me</strong></h1>
-            <p style="color:white;">This page is managed by Mani T.</p>
-            <p style="color:white;"><a href="https://manigggg18.github.io/manimani/">Personal Fastpages</a></p>
+            <h1 style="color:rgb(200, 200, 0);"><strong>About Me</strong></h1><br>
+            <p style="color:white;">This page is managed by Mani T.</p><br>
+            <hr class="rounded"><br>
+            <h2 style="color:rgb(200, 200, 0);"><strong><em>Managing a Local Flask Server</em></strong></h1><br>
+            <p style="color:white;">This this is a demonstration of how I manage a this website.</p><br>
+            <iframe width="800" height="600"
+            src="https://www.youtube.com/embed/-EPuP4X8pmo">
+            </iframe>
+            <hr class="rounded"><br>
+            <h2 style="color:rgb(200, 200, 0);"><strong><em>Bonus</em></strong></h1><br>
+            <p style="color:white;">Here's a cool video...for no reason at all.</p><br>
+            <iframe width="800" height="600"
+            src="https://www.youtube.com/embed/QBK3QpQVnaw">
+            </iframe><br>
+            <hr class="rounded"><br>
+            <p style="color:white;"><a href="https://manigggg18.github.io/manimani/">Personal Fastpages</a></p><br>
         </div>
     </body>
 {% endblock %}
